@@ -35,13 +35,13 @@ function Header() {
     <header>
       <div className="wrap">
         <Logo />
-        <button className="menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
+        <button className="menu"  aria-expanded={open} onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
         <nav className={open ? 'show' : ''}>
           {NAV.map(([t, u]) => <a key={u} href={u} onClick={() => setOpen(false)}>{t}</a>)}
           <a href={TEL}   className="btn p" style={{ padding: '9px 18px' }}>{PHONE}</a>
         </nav>
       </div>
-    </header>  
+    </header>    
   )   
 }
 
