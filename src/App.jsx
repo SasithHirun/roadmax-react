@@ -25,7 +25,7 @@ function Reveal({ as: Tag = 'div', delay = 0, className = '', children, ...rest 
 
 const Logo = ({ dark }) => (
   <a href="#top" className="logo" aria-label="RoadMax home">
-    <img src={dark ? logoDark : logoLight} alt="RoadMax - Built for the road ahead" width="158" height="50" />
+    <img src= {dark ? logoDark : logoLight} alt="RoadMax - Built for the road ahead" width="158" height="50" />
   </a>
 )
 
@@ -38,14 +38,14 @@ function Header() {
         <button className="menu" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
         <nav className={open ? 'show' : ''}>
           {NAV.map(([t, u]) => <a key={u} href={u} onClick={() => setOpen(false)}>{t}</a>)}
-          <a href={TEL} className="btn p" style={{ padding: '9px 18px' }}>{PHONE}</a>
+          <a href={TEL}   className="btn p" style={{ padding: '9px 18px' }}>{PHONE}</a>
         </nav>
       </div>
-    </header>
-  )
+    </header>  
+  )   
 }
 
-function Hero() {
+function Hero() {   
   return (
     <div id="top" className="hero">
       <div className="wrap">
